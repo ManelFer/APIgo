@@ -16,5 +16,8 @@ func RegisterRoutes(r *gin.Engine) {
 	protected.Use(middlewares.AuthMiddleware())
 	{
 		protected.GET("/users", handlers.Getusers)
+		// Estoque: só listar e inserir com usuário logado
+		protected.GET("/estoque", handlers.GetEstoque)
+		protected.POST("/estoque", handlers.CreateEstoque)
 	}
 }
