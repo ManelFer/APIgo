@@ -1,0 +1,82 @@
+# =========================
+# Sistema Operacional
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Node.js
+# =========================
+node_modules/
+dist/
+build/
+.cache/
+.next/
+out/
+.env
+.env.local
+.env.*.local
+
+# =========================
+# Go (Golang)
+# =========================
+# Binários
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Build
+/bin/
+pkg/
+*.test
+
+# Go workspace
+go.work
+go.work.sum
+
+# =========================
+# IDEs e Editores
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# =========================
+# Arquivos temporários
+# =========================
+tmp/
+temp/
+*.tmp
+*.bak
+
+# =========================
+# PowerShell
+# =========================
+*.psm1
+*.psd1
+
+# =========================
+# Arquivos de backup
+# =========================
+*.old
+*.orig
+
+# =========================
+# Certificados / Chaves
+# =========================
+*.pem
+*.key
