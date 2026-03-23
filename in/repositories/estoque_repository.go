@@ -12,6 +12,12 @@ func CreateEstoque(e models.Estoque) error {
 	return err
 }
 
+func DeleteEstoque(id int) error {
+	query := `DELETE FROM estoque WHERE id = $1`
+	_, err := database.DB.Exec(query, id)
+	return err
+}
+
 func GetAllEstoque() ([]models.Estoque, error) {
 	rows, err := database.DB.Query("SELECT id, equipamento, marca, modelo, patrimonio, quantidade FROM estoque")
 	if err != nil {
